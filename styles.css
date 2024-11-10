@@ -1,0 +1,132 @@
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #292d36;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  main{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-image: url(./paperbg.jpeg);
+    background-size: cover;
+  }
+
+  .content{
+    flex: 2;
+    height: 100vh;
+  }
+
+  .web-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px;
+  }
+
+  .title{
+    color: #cccfd6;
+    font-size: 12px;
+  }
+
+  .hero-text{
+    font-size: 50px;
+    color:#25252d;
+    text-align: center;
+  }
+  
+  .recipes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recipes h3{
+    font-size: larger;
+    margin-bottom: 20px;
+    color:#25252d;
+  }
+
+  .recp{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+  }
+
+
+  .recp img{
+    max-width: 100%;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: khaki;
+    padding: 10px;
+    margin-right: -10px;
+    
+  }
+
+  .details{
+    background-color: khaki;
+    height: fit-content;
+    align-self: center;
+    width: 40%;
+    padding: 10px
+  }
+
+  .recp-name a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .details ul{
+    list-style-type: none;
+  }
+
+
