@@ -15,7 +15,8 @@
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    background-color: #292d36;
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   img, picture, video, canvas, svg {
@@ -42,101 +43,132 @@
     isolation: isolate;
   }
 
-  main{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-image: url(./paperbg.jpeg);
-    background-size: cover;
+  /* Icon styl */
+  .material-symbols-outlined {
+    vertical-align: middle;
+    line-height: 1px;
+    font-size: 35px;
   }
 
-  .content{
-    flex: 2;
-    height: 100vh;
-    padding: 2rem;
-  }
+ 
 
-  .web-img{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5rem;
-  }
-
+  /* Header */
   header{
     display: flex;
     align-items: center;
     gap: 2em;
     padding: 1em;
-    margin-left: 50px
+    border-bottom: 2px solid #25252d;
+    box-shadow:  0px 4px 6px;
+  } 
+
+  .icon{
+    background-color: #25252d;
+    padding: 0.5rem;
+    border-radius: 50%;
   }
 
   .title{
-    color: #cccfd6;
-    font-size: 0.5rem;
+    font-size: 1rem;
+  }
+  
+
+  /* Main */
+ 
+  .main{
+    padding: 1rem;
+    min-height: 100vh;
+  }
+
+  .content{
+    margin: 2rem;
+  }
+
+  /* Hero */
+  .hero{
+    text-align: center;
+    margin-top: 1rem;
+    padding: 3rem;
+    border-bottom: 2px solid #25252d;
+    margin-bottom: 3rem;
   }
 
   .hero-text{
-    font-size: 2rem;
-    color:#25252d;
-    text-align: center;
+    font-size: 1.5rem;
   }
-  
-  .recipes{
+
+  .hero-text h2{
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #skillet{
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Recepies */
+  .rep-heading{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 0.5rem dotted #25252d;
-    box-shadow:10px 10px 10px 2px teal;
-    border-radius: 1rem;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
   }
 
   .recipes h3{
-    font-size: larger;
-    margin-bottom: 20px;
-    color:#25252d;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #menu-book{
+    padding-top: 0.6rem;
+    font-size: 2rem;
+  }
+
+  .rep-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
   }
 
   .recp{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 25px;
-    
+    max-width: 20rem;
+    border: 2px solid #25252d;
+    padding: 0.4rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px;
   }
-
 
   .recp img{
-    max-width: 100%;
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    background-color: #25252d;
-    padding: 0.5rem;
-    margin-right: -0.9rem;
-    
-  }
-
-  .details{
-    background-color: #25252d;
-    height: fit-content;
-    align-self: center;
-    width: 40%;
-    padding: 10px;
-    border-radius: 0 1rem 1rem 0;
-    box-shadow: 0 1rem 2rem teal ;
-  }
-
-  .recp-name a{
-    text-decoration: none;
-    color: white;
+    border-radius: 1rem;
   }
 
   .details ul{
     list-style-type: none;
-    color: teal;
+  }
+
+  .details a{
+    text-decoration: none;
+    color: #25252d;
+    font-size: 2rem;
+  }
+
+  .details a:hover{
+    color: gray;
+  }
+
+  #difficulty{
+    color: green;
   }
 
 
+  /* Footer */
+  footer{
+    text-align: center;
+    background-color: #25252d;
+    padding: 1rem;
+    margin-top: auto;
+    box-shadow: 4px px 6px black;
+    color: white;
+  }

@@ -3,55 +3,85 @@
     <head>
         <meta charset="UTF-8">
         <title>Taste Taste Taste</title>
+
+        <!-- Style sheet -->
         <link rel="stylesheet" href="styles.css" class="css">
+
+        <!--Material Icons link-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+                
     </head>
     <body>
+        <!-- Header -->
         <header>
             <div class="icon">
                 <img src="./local_dining_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="site icon">
             </div>
-            <div class="title"><h1>Taste Taste Taste</h1></div>
+            <div class="title"><h1>Taste Taste</h1></div>
         </header>
+        <!-- Header end -->
+
+        <!-- Main -->
         <main>
             <div class="content">
+                <!-- Section 1: HERO -->
                 <div class="hero">
-                    <div class="hero-text"><h2>LETS COOK</h2></div>
+                    <div class="hero-text">
+                        <h2>LETS COOK</h2>
+                        <span class="material-symbols-outlined" id="skillet">
+                            skillet
+                        </span>
+                        <p>
+                            Turning Ordinary Meals into Culinary Adventures! 🍳✨<br> 
+                            Follow me as I tackle recipes, flip them on their heads,<br> 
+                            sprinkle in a dash of chaos, and serve up unforgettable twists.<br> 
+                            Hungry for something new? Let's spice it up together!"
+                        </p>
+                    </div>
                 </div>
 
+                <!-- Section 2: RECEPIES -->
                 <div class="recipes">
-                    <h3>Recipes</h3>
+                    <div class="rep-heading">
+                        <h3>Recipes</h3>
+                        <div class="material-symbols-outlined" id="menu-book">menu_book</div>
+                    </div>
                     
-                    <div class="recp">
-                        <img src="./recipes/recipe_images/egg_tomato_rice.jpg" alt="rice and egg soup">
-                        <div class="details">
-                            <ul>
-                                <li><div class="recp-name"><a href="recipes/egg_&_rice.html">Egg and Rice</a></div></li>
-                                <li id="prep-time">Prep Time: </li>
-                                <li id="difficulty">Easy</li>
-                            </ul>
+                    
+                    <div class="rep-content">
+                        <div class="recp">
+                            <img src="./recipes/recipe_images/egg_tomato_rice.jpg" alt="rice and egg soup">
+                            <div class="details">
+                                <ul>
+                                    <li><div class="recp-name"><a href="recipes/egg_&_rice.html">Egg and Rice</a></div></li>
+                                    <li id="prep-time">Prep Time: </li>
+                                    <li id="difficulty">Easy</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="recp">
+                            <img src="./recipes/recipe_images/rice and lentils.jpg" alt="Lentils and rice">
+                            <div class="details">
+                                <ul>
+                                    <li><div class="recp-name"><a href="./recipes/lentils_and_rice.html">Lentils and Rice</a></div></li>
+                                    <li id="prep-time">Prep Time: </li>
+                                    <li id="difficulty">Easy</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="recp" style="flex-direction: row-reverse;">
-                        <img src="./recipes/recipe_images/rice and lentils.jpg" alt="Lentils and rice" style="margin-left: -10px;">
-                        <div class="details" style="border-radius: 1rem 0 0 1rem;">
-                            <ul>
-                                <li><div class="recp-name"><a href="./recipes/lentils_and_rice.html">Lentils and Rice</a></div></li>
-                                <li id="prep-time">Prep Time: </li>
-                                <li id="difficulty">Easy</li>
-                            </ul>
-                        </div>
-                    </div>
-                    </div>
+                    
                 </div>
             </div>
 
-            <div class="web-img">
-                <div class="hero-img"><img src="./chef.png" alt="hero image"></div> 
-            </div>
         </main>
+        <!-- Main end -->
+
+        <!-- Footer -->
         <footer>
             <div class="copyright">copyright@nighthawk-ops</div>
         </footer> 
+        <!-- Footer end -->
     </body>
 </html>
